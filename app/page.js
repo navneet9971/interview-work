@@ -143,6 +143,7 @@ const App = () => {
     [reactFlowInstance]
   );
 
+  //Save image using Html-to-image
   const saveImage = useCallback(() => {
     if (reactFlowWrapper.current === null) {
       return;
