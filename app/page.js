@@ -36,7 +36,7 @@ const initialNodes = [
   },
 ];
 
-let id = 1; 
+let id = 1;
 
 // Function for generating unique IDs for nodes
 const getId = () => `node_${id++}`;
@@ -73,7 +73,7 @@ const App = () => {
         })
       );
     } else {
-      setNodeName(""); 
+      setNodeName("");
     }
   }, [nodeName, selectedElements, setNodes]);
 
@@ -83,7 +83,7 @@ const App = () => {
     setEdges([]);
     setSelectedElements([]);
     setNodeName("");
-    setNodeCount(initialNodes.length); 
+    setNodeCount(initialNodes.length);
   };
 
   // Handle node click
@@ -138,7 +138,7 @@ const App = () => {
 
       console.log("Node created: ", newNode);
       setNodes((nds) => nds.concat(newNode));
-      setNodeCount((count) => count + 1); 
+      setNodeCount((count) => count + 1);
     },
     [reactFlowInstance]
   );
@@ -185,7 +185,7 @@ const App = () => {
             setNodes((nodes) =>
               nodes.map((n) => ({
                 ...n,
-                selected: false, 
+                selected: false,
               }))
             );
           }}
